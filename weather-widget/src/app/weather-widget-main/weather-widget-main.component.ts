@@ -20,8 +20,14 @@ export class WeatherWidgetMainComponent implements OnInit {
     console.log(this.WeatherData);
   }
 
+  // searchCity(newCityName){
+  //   var newCity = 
+
+  // } 
+
   getWeatherData(){
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=6614716def7e71d5821946f1cae6337c')
+    var city = "Toronto";
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6614716def7e71d5821946f1cae6337c`)
     .then(response => response.json())
     .then(data=>{this.setWeatherData(data);})
 
