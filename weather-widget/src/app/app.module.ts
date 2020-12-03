@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherWidgetMainComponent } from './weather-widget-main/weather-widget-main.component';
 import { WeatherWidgetOttawaComponent } from './weather-widget-ottawa/weather-widget-ottawa.component';
+import { WeatherWidgetMontrealComponent } from './weather-widget-montreal/weather-widget-montreal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherWidgetMainComponent,
-    WeatherWidgetOttawaComponent
+    WeatherWidgetOttawaComponent,
+    WeatherWidgetMontrealComponent
   ],
   imports: [
     BrowserModule,
